@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4EA57770C72A5449EC451BC6 /* Pods_InovaApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DC5931E40BB7B0352480EE /* Pods_InovaApp.framework */; };
+		5540E2A68F74D4F620D6379B /* Pods_InovaAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9D56B26A9CEF300BBB24F2D /* Pods_InovaAppTests.framework */; };
 		D4261ECC2836C09900C6166B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4261ECB2836C09900C6166B /* AppDelegate.swift */; };
 		D4261ECE2836C09900C6166B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4261ECD2836C09900C6166B /* SceneDelegate.swift */; };
-		D4261ED02836C09900C6166B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4261ECF2836C09900C6166B /* ViewController.swift */; };
+		D4261ED02836C09900C6166B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4261ECF2836C09900C6166B /* HomeVC.swift */; };
 		D4261ED32836C09900C6166B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4261ED12836C09900C6166B /* Main.storyboard */; };
 		D4261ED52836C09B00C6166B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4261ED42836C09B00C6166B /* Assets.xcassets */; };
 		D4261ED82836C09B00C6166B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4261ED62836C09B00C6166B /* LaunchScreen.storyboard */; };
 		D4261EE32836C09C00C6166B /* InovaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4261EE22836C09C00C6166B /* InovaAppTests.swift */; };
 		D4261EED2836C09C00C6166B /* InovaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4261EEC2836C09C00C6166B /* InovaAppUITests.swift */; };
 		D4261EEF2836C09C00C6166B /* InovaAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4261EEE2836C09C00C6166B /* InovaAppUITestsLaunchTests.swift */; };
+		D4261F012836C33E00C6166B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4261F002836C33E00C6166B /* HomeViewModel.swift */; };
+		D4261F032836C62F00C6166B /* SeriesJson.json in Resources */ = {isa = PBXBuildFile; fileRef = D4261F022836C62F00C6166B /* SeriesJson.json */; };
+		D4261F052836C76A00C6166B /* Series.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4261F042836C76A00C6166B /* Series.swift */; };
+		D4261F082836D9A900C6166B /* UIImageView + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4261F072836D9A900C6166B /* UIImageView + Ext.swift */; };
+		F7E0C6665DF203E38CBF997E /* Pods_InovaApp_InovaAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002766BB8A2883B71A02395C /* Pods_InovaApp_InovaAppUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +43,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		002766BB8A2883B71A02395C /* Pods_InovaApp_InovaAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InovaApp_InovaAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		014CE01D92E680E8D7CB9631 /* Pods-InovaApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InovaApp.debug.xcconfig"; path = "Target Support Files/Pods-InovaApp/Pods-InovaApp.debug.xcconfig"; sourceTree = "<group>"; };
+		0DA9DA9D38F22A4065569007 /* Pods-InovaApp-InovaAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InovaApp-InovaAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-InovaApp-InovaAppUITests/Pods-InovaApp-InovaAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4049E4388D7642EC42DA2793 /* Pods-InovaAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InovaAppTests.debug.xcconfig"; path = "Target Support Files/Pods-InovaAppTests/Pods-InovaAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5477AA07AA25F1C20F9A8B61 /* Pods-InovaApp-InovaAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InovaApp-InovaAppUITests.release.xcconfig"; path = "Target Support Files/Pods-InovaApp-InovaAppUITests/Pods-InovaApp-InovaAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B87AF357E5451F22072381AE /* Pods-InovaAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InovaAppTests.release.xcconfig"; path = "Target Support Files/Pods-InovaAppTests/Pods-InovaAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		BDB832E28CA0046D592FF5DB /* Pods-InovaApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InovaApp.release.xcconfig"; path = "Target Support Files/Pods-InovaApp/Pods-InovaApp.release.xcconfig"; sourceTree = "<group>"; };
+		C8DC5931E40BB7B0352480EE /* Pods_InovaApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InovaApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4261EC82836C09900C6166B /* InovaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InovaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4261ECB2836C09900C6166B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4261ECD2836C09900C6166B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D4261ECF2836C09900C6166B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D4261ECF2836C09900C6166B /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		D4261ED22836C09900C6166B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D4261ED42836C09B00C6166B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4261ED72836C09B00C6166B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +64,11 @@
 		D4261EE82836C09C00C6166B /* InovaAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InovaAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4261EEC2836C09C00C6166B /* InovaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InovaAppUITests.swift; sourceTree = "<group>"; };
 		D4261EEE2836C09C00C6166B /* InovaAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InovaAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D4261F002836C33E00C6166B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		D4261F022836C62F00C6166B /* SeriesJson.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SeriesJson.json; sourceTree = "<group>"; };
+		D4261F042836C76A00C6166B /* Series.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Series.swift; sourceTree = "<group>"; };
+		D4261F072836D9A900C6166B /* UIImageView + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Ext.swift"; sourceTree = "<group>"; };
+		F9D56B26A9CEF300BBB24F2D /* Pods_InovaAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InovaAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EA57770C72A5449EC451BC6 /* Pods_InovaApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5540E2A68F74D4F620D6379B /* Pods_InovaAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +92,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7E0C6665DF203E38CBF997E /* Pods_InovaApp_InovaAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C5F3C1BD1CC19C3945D09D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				014CE01D92E680E8D7CB9631 /* Pods-InovaApp.debug.xcconfig */,
+				BDB832E28CA0046D592FF5DB /* Pods-InovaApp.release.xcconfig */,
+				0DA9DA9D38F22A4065569007 /* Pods-InovaApp-InovaAppUITests.debug.xcconfig */,
+				5477AA07AA25F1C20F9A8B61 /* Pods-InovaApp-InovaAppUITests.release.xcconfig */,
+				4049E4388D7642EC42DA2793 /* Pods-InovaAppTests.debug.xcconfig */,
+				B87AF357E5451F22072381AE /* Pods-InovaAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D4261EBF2836C09900C6166B = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +119,8 @@
 				D4261EE12836C09C00C6166B /* InovaAppTests */,
 				D4261EEB2836C09C00C6166B /* InovaAppUITests */,
 				D4261EC92836C09900C6166B /* Products */,
+				0C5F3C1BD1CC19C3945D09D3 /* Pods */,
+				E05176D086D4DE12D828AE6D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +137,11 @@
 		D4261ECA2836C09900C6166B /* InovaApp */ = {
 			isa = PBXGroup;
 			children = (
-				D4261ECB2836C09900C6166B /* AppDelegate.swift */,
-				D4261ECD2836C09900C6166B /* SceneDelegate.swift */,
-				D4261ECF2836C09900C6166B /* ViewController.swift */,
-				D4261ED12836C09900C6166B /* Main.storyboard */,
-				D4261ED42836C09B00C6166B /* Assets.xcassets */,
-				D4261ED62836C09B00C6166B /* LaunchScreen.storyboard */,
+				D4261F062836D99100C6166B /* Extensions */,
+				D4261EFD2836C16100C6166B /* Core */,
+				D4261EFC2836C14B00C6166B /* Resource */,
+				D4261EFB2836C14000C6166B /* Model */,
+				D4261EFE2836C19700C6166B /* Scenes */,
 				D4261ED92836C09B00C6166B /* Info.plist */,
 			);
 			path = InovaApp;
@@ -127,6 +164,69 @@
 			path = InovaAppUITests;
 			sourceTree = "<group>";
 		};
+		D4261EFB2836C14000C6166B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D4261F042836C76A00C6166B /* Series.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D4261EFC2836C14B00C6166B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				D4261ED42836C09B00C6166B /* Assets.xcassets */,
+				D4261F022836C62F00C6166B /* SeriesJson.json */,
+				D4261ED62836C09B00C6166B /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		D4261EFD2836C16100C6166B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D4261ECB2836C09900C6166B /* AppDelegate.swift */,
+				D4261ECD2836C09900C6166B /* SceneDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D4261EFE2836C19700C6166B /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				D4261EFF2836C2C600C6166B /* Home */,
+				D4261ED12836C09900C6166B /* Main.storyboard */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		D4261EFF2836C2C600C6166B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D4261ECF2836C09900C6166B /* HomeVC.swift */,
+				D4261F002836C33E00C6166B /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D4261F062836D99100C6166B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D4261F072836D9A900C6166B /* UIImageView + Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E05176D086D4DE12D828AE6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8DC5931E40BB7B0352480EE /* Pods_InovaApp.framework */,
+				002766BB8A2883B71A02395C /* Pods_InovaApp_InovaAppUITests.framework */,
+				F9D56B26A9CEF300BBB24F2D /* Pods_InovaAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +234,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D4261EF22836C09C00C6166B /* Build configuration list for PBXNativeTarget "InovaApp" */;
 			buildPhases = (
+				DD2BCF618214D49877E80B29 /* [CP] Check Pods Manifest.lock */,
 				D4261EC42836C09900C6166B /* Sources */,
 				D4261EC52836C09900C6166B /* Frameworks */,
 				D4261EC62836C09900C6166B /* Resources */,
+				F5C0D84DF116B1DB25B2F923 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +253,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D4261EF52836C09C00C6166B /* Build configuration list for PBXNativeTarget "InovaAppTests" */;
 			buildPhases = (
+				48B773B6A4A5F17D1196E23F /* [CP] Check Pods Manifest.lock */,
 				D4261EDA2836C09C00C6166B /* Sources */,
 				D4261EDB2836C09C00C6166B /* Frameworks */,
 				D4261EDC2836C09C00C6166B /* Resources */,
@@ -169,9 +272,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D4261EF82836C09C00C6166B /* Build configuration list for PBXNativeTarget "InovaAppUITests" */;
 			buildPhases = (
+				7F915F11B03664BB4429E142 /* [CP] Check Pods Manifest.lock */,
 				D4261EE42836C09C00C6166B /* Sources */,
 				D4261EE52836C09C00C6166B /* Frameworks */,
 				D4261EE62836C09C00C6166B /* Resources */,
+				8C49DF2B5FB5E97A08AA1CDE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,6 +336,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4261F032836C62F00C6166B /* SeriesJson.json in Resources */,
 				D4261ED82836C09B00C6166B /* LaunchScreen.storyboard in Resources */,
 				D4261ED52836C09B00C6166B /* Assets.xcassets in Resources */,
 				D4261ED32836C09900C6166B /* Main.storyboard in Resources */,
@@ -253,14 +359,120 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		48B773B6A4A5F17D1196E23F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InovaAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F915F11B03664BB4429E142 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InovaApp-InovaAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C49DF2B5FB5E97A08AA1CDE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InovaApp-InovaAppUITests/Pods-InovaApp-InovaAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InovaApp-InovaAppUITests/Pods-InovaApp-InovaAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InovaApp-InovaAppUITests/Pods-InovaApp-InovaAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD2BCF618214D49877E80B29 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InovaApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5C0D84DF116B1DB25B2F923 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InovaApp/Pods-InovaApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InovaApp/Pods-InovaApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InovaApp/Pods-InovaApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D4261EC42836C09900C6166B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4261ED02836C09900C6166B /* ViewController.swift in Sources */,
+				D4261ED02836C09900C6166B /* HomeVC.swift in Sources */,
 				D4261ECC2836C09900C6166B /* AppDelegate.swift in Sources */,
 				D4261ECE2836C09900C6166B /* SceneDelegate.swift in Sources */,
+				D4261F012836C33E00C6166B /* HomeViewModel.swift in Sources */,
+				D4261F082836D9A900C6166B /* UIImageView + Ext.swift in Sources */,
+				D4261F052836C76A00C6166B /* Series.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +644,7 @@
 		};
 		D4261EF32836C09C00C6166B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 014CE01D92E680E8D7CB9631 /* Pods-InovaApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -460,6 +673,7 @@
 		};
 		D4261EF42836C09C00C6166B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDB832E28CA0046D592FF5DB /* Pods-InovaApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -488,6 +702,7 @@
 		};
 		D4261EF62836C09C00C6166B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4049E4388D7642EC42DA2793 /* Pods-InovaAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +723,7 @@
 		};
 		D4261EF72836C09C00C6166B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B87AF357E5451F22072381AE /* Pods-InovaAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -528,6 +744,7 @@
 		};
 		D4261EF92836C09C00C6166B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DA9DA9D38F22A4065569007 /* Pods-InovaApp-InovaAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -546,6 +763,7 @@
 		};
 		D4261EFA2836C09C00C6166B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5477AA07AA25F1C20F9A8B61 /* Pods-InovaApp-InovaAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
