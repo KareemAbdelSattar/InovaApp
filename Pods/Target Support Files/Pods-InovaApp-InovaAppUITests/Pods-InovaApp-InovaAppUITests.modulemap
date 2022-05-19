@@ -1,0 +1,6 @@
+framework module Pods_InovaApp_InovaAppUITests {
+  umbrella header "Pods-InovaApp-InovaAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
